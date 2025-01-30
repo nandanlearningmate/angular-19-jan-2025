@@ -1,0 +1,36 @@
+<br/><br/><br/><br/>
+
+<form class="updateUserForm" [formGroup]="signupForm" (Submit)="signupFormSubmit()">
+    <div>
+        <label for="full_name">Name:</label>
+        <input type="text" id="full_name" formControlName="full_name" name="full_name"/>
+        <div>{{nameError}}</div>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email" name="email"/>
+        <div>{{emailError}}</div>
+    </div>
+    <div>
+        Gender:
+        <input type="radio" name="gender" formControlName="gender" value="male"/> Male
+        <input type="radio" name="gender" formControlName="gender" value="female"/> Female
+        <div>{{genderError}}</div>
+    </div>
+    <div>
+        Role:
+        <select name="role" formControlName="role">
+            <option value="admin">Admin</option>
+            <option value="buyer">Buyer</option>
+            <option value="seller">Seller</option>
+        </select>
+        <div>{{roleError}}</div>
+    </div>
+    <div>
+        <input type="checkbox" name="tnc"/> Accept Terms & Conditions 
+        <div>{{tncError}}</div>
+    </div>
+    <div>
+        <button type="submit">SUBMIT</button>
+    </div>
+</form>
