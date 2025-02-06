@@ -23,6 +23,14 @@
       "name": "nandan",
       "email": "ISC\\lmqateacher_3",
       "password": "password1234"
+    },
+    {
+      "id": "fe7e",
+      "name": "adsqwdd",
+      "email": "qs@gmail.com",
+      "gender": "male",
+      "role": "buyer",
+      "tnc": true
     }
   ],
   "products": [
